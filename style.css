@@ -1,0 +1,61 @@
+/*
+Theme Name: Elsie Puig Blank Template Fall 2016
+Theme URI: www.elsiepuig.com
+Author: Elsie Puig
+Description: Blog Site Theme for Web Interactivity and Engagement
+Version: 0.1
+License: Open
+Text Domain: elsie-puig-wie-blog-site
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+
+*{
+    color: #000000;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+body {
+	width:80%;
+}
+
+.header {
+	width: 100%;
+}
+
+.top-level-nav {
+	display: flex;
+	flex-direction: row;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #323232;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2.0rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+html {
+  background-color: #ffffff;
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.6rem;
+}
+
