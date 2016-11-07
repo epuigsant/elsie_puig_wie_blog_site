@@ -9,20 +9,24 @@
 		<div class="categories"><p>Publishing</p></div>
 	</div>
 	
-	<!---BLOG POST EXCERPTS--->
 	
-	<div class="blog-excerpts">
+	<!---BLOG POST EXCERPTS--->
+
+
+<div class="blog-excerpts">
 		
 		
 		<!--Begin Loop-->
-		<div class="blog-cards">
+		<div class="blog-posts">
 			<?php
         if ( have_posts() ) {
           while ( have_posts() ) {
             the_post(); ?>
 			
-	
-			<div class="blog-cards-image">
+			
+			<div class="excerpt-posts">
+				
+				<div class="blog-posts-image">
 				<?php
 				if ( has_post_thumbnail() ) {
                 	the_post_thumbnail('thumbnail');
@@ -34,9 +38,10 @@
 				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 				<?php the_date( 'Y-m-d', '<p>', '</p>' ); ?>
 				<p><?php the_excerpt(); ?></p>
+				<button><a href="<?php the_permalink(); ?>">Read More</a></button>
 			</div>
-		
-			<button><a href="<?php the_permalink(); ?>">Read More</a></button>
+			
+			</div>
 			
 			<?php  }//end while
 	   	}//end if
@@ -46,6 +51,7 @@
 		
 		
 	</div> <!--- END BLOG EXCERPTS--->
+
 
 	<button class="more">More Posts</button>
 

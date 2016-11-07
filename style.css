@@ -62,39 +62,58 @@ p {
 
 /****BLOG GRID****/
 
-.blog-cards {
-width: 32.5%;
-display: inline-block;
-vertical-align: top;
-text-align: left;
-margin-bottom: 40px;
-position: relative;
+.blog-posts {
+width: 100%;
+display:flex;
+flex-direction:row;
+flex-wrap: wrap;
+margin-bottom: 45px;
 }
 
-/*.blog-excerpts {
+.excerpt-posts {
+	width: 28%;
 	display:flex;
-	flex-direction:row;
-	width: 100%;
-	flex-wrap:wrap;
-	min-height: 950px;
+	flex-direction:column;
+	border: 0.4px solid lightgray;
+	margin: 20px;
 }
 
-.blog-cards {
-	width: 33.33%;
-	height: 400px;
-	margin: 15px;
-	border: solid 1.5px #323232;
+.blog-post-image {
+	width: 100%;
+	position: absolute;
+	overflow: hidden;
 }
 
-.blog-cards-image {
-	width: 100%;
-	height: 250px;
+.blog-post-image img {
+	object-fit: cover;
+    width: 100%;
+    height: 48vh;
 }
+
 
 .excerpt-content {
-	width: 90%;
-	margin: auto;
-}*/
+	width: 85%;
+	margin: 10px auto;
+}
+
+.excerpt-content h3 a {
+	font-size: 22px;
+}
+
+.excerpt-content p {
+	font-size: 14px;
+}
+
+.excerpt-content button {
+	width: 95%;
+	height:35px;
+	background-color: #AB4747;
+	border: none;
+}
+
+.excerpt-content button a {
+	color: white;
+}
 
 .more {
 	width:125px;
