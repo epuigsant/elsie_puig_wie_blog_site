@@ -13,80 +13,42 @@
 	
 	<div class="blog-excerpts">
 		
-		<!---CARD ONE--->
 		
+		<!--Begin Loop-->
 		<div class="blog-cards">
+			<?php
+        if ( have_posts() ) {
+          while ( have_posts() ) {
+            the_post(); ?>
+			
+	
 			<div class="blog-cards-image">
+				<?php
+				if ( has_post_thumbnail() ) {
+                	the_post_thumbnail('thumbnail');
+              		}
+              		?>
 			</div>
-			<h2>Post Title</h2>
-			<h3>Post Subtitle</h3>
-			<p>Post Date</p>
-			<p>Post Excerpt....</p>
-			<button>Read More Button</button>
+			
+			<div class="excerpt-content">
+				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+				<p>Post Date</p>
+				<p><?php the_excerpt(); ?></p>
+			</div>
+		
+			<button><a href="<?php the_permalink(); ?>">Read More</a></button>
+			
+			<?php  }//end while
+	   	}//end if
+			?>
+      <!--End Loop-->
 		</div>
 		
-		<!---CARD TWO--->
-		
-		<div class="blog-cards">
-			<div class="blog-cards-image">
-			</div>
-			<h2>Post Title</h2>
-			<h3>Post Subtitle</h3>
-			<p>Post Date</p>
-			<p>Post Excerpt....</p>
-			<button>Read More Button</button>
-		</div>
-		
-		<!---CARD THREE--->
-		
-		<div class="blog-cards">
-			<div class="blog-cards-image">
-			</div>
-			<h2>Post Title</h2>
-			<h3>Post Subtitle</h3>
-			<p>Post Date</p>
-			<p>Post Excerpt....</p>
-			<button>Read More Button</button>
-		</div>
-		
-		<!---CARD FOUR--->
-		
-		<div class="blog-cards">
-			<div class="blog-cards-image">
-			</div>
-			<h2>Post Title</h2>
-			<h3>Post Subtitle</h3>
-			<p>Post Date</p>
-			<p>Post Excerpt....</p>
-			<button>Read More Button</button>
-		</div>
-		
-		<!---CARD FIVE--->
-		
-		<div class="blog-cards">
-			<div class="blog-cards-image">
-			</div>
-			<h2>Post Title</h2>
-			<h3>Post Subtitle</h3>
-			<p>Post Date</p>
-			<p>Post Excerpt....</p>
-			<button>Read More Button</button>
-		</div>
-		
-		<!---CARD SIX--->
-		
-		<div class="blog-cards">
-			<div class="blog-cards-image">
-			</div>
-			<h2>Post Title</h2>
-			<h3>Post Subtitle</h3>
-			<p>Post Date</p>
-			<p>Post Excerpt....</p>
-			<button>Read More Button</button>
-		</div>
-		
-		<button class="more">More Posts</button>
 		
 	</div> <!--- END BLOG EXCERPTS--->
+
+	<button class="more">More Posts</button>
+
+
 	
 	<?php get_footer(); ?>

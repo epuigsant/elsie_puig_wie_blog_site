@@ -19,6 +19,7 @@ Text Domain: elsie-puig-wie-blog-site
 
 body {
 	width:80%;
+	margin: auto;
 }
 
 .header {
@@ -39,15 +40,15 @@ h3 {
 }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 30px;
 }
 
 h2 {
-  font-size: 2.0rem;
+  font-size: 20px;
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 18px;
 }
 
 html {
@@ -56,6 +57,121 @@ html {
 
 p {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.6rem;
+  font-size: 14px;
 }
+
+/****BLOG GRID****/
+
+.blog-cards {
+width: 32.5%;
+display: inline-block;
+vertical-align: top;
+text-align: left;
+margin-bottom: 40px;
+position: relative;
+}
+
+/*.blog-excerpts {
+	display:flex;
+	flex-direction:row;
+	width: 100%;
+	flex-wrap:wrap;
+	min-height: 950px;
+}
+
+.blog-cards {
+	width: 33.33%;
+	height: 400px;
+	margin: 15px;
+	border: solid 1.5px #323232;
+}
+
+.blog-cards-image {
+	width: 100%;
+	height: 250px;
+}
+
+.excerpt-content {
+	width: 90%;
+	margin: auto;
+}*/
+
+.more {
+	width:125px;
+	height: 40px;
+	background-color: white;
+	border: 2px solid #AB4747;
+	border-radius: 0.3px;
+	margin: auto;
+	display:block;
+}
+
+
+/****BLOG FOOTER****/
+
+.cta {
+	width: 100%;
+	height: 180px;
+	background-color: #E8E8E8;
+	text-align: center;
+}
+
+.cta button {
+	background-color: #AB4747;
+	border: none:
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+	height: 36px;
+	width: 100px;
+}
+
+input {
+	height: 30px;
+}
+
+.cta p {
+	padding-top: 45px;
+	font-size: 20px;
+}
+
+
+footer {
+	width: 100%;
+	height: 220px;
+	background-color: #3C3C45;
+	display:flex;
+	flex-direction: row;
+}
+
+
+footer .three-column {
+	width: 333.33%;
+}
+
+li.widget ul { 
+	list-style: none; 
+}
+
+li.widget li {
+	list-style: none;
+}
+
+.footer-one {
+	color: white;
+}
+
+a {
+text-decoration:none;
+}
+
+div.widget ul {
+list-style-type: none !important;
+}
+
+
+
+
+
+
+
 

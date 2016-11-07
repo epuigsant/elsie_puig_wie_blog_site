@@ -3,7 +3,7 @@
 	<div class="cta">
 		<p>Want to stay up to date on the latest? Subscribe!</p>
 		<form method="post">
-			<input type="email" id="mail" name="user_mail" />
+			<input type="email" id="mail" name="user_mail" placeholder="Your Email" />
 			<button>Subscribe</button>
 		</form>
 	</div>
