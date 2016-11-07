@@ -51,7 +51,8 @@
 		<div class="profile-image">
 		</div>
 		<div class="brief-bio">
-			<h3>Behind The Blog: Elsie Puig</h3>
-			<p>Elsie Puig is a writer, web designer, intern, mom, wife, and student living in Richland, WA. Her passion is brinding the gap between useful content and great design.</p>
+			<?php dynamic_sidebar('profile-widget'); ?>
+			<!--<h3>Behind The Blog: Elsie Puig</h3>
+			<p>Elsie Puig is a writer, web designer, intern, mom, wife, and student living in Richland, WA. Her passion is brinding the gap between useful content and great design.</p>-->
 		</div>
 	</div>

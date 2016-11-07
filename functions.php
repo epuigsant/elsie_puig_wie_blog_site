@@ -47,6 +47,21 @@ register_sidebar( array (
   	'before_title'  => '<h3>',
   	'after_title'   => '</h3>'
 ));
+	
+	
+	
+/*--- Profile Widget ---*/
+
+register_sidebar( array (
+    'name'          => ('Profile Widget'),
+    'id'            => 'profile-widget',
+    'description'   => 'widget for profile and bio',
+    'before-widget' => '<div class="profile-widget">',
+    'after_widget'  => '</div>',
+  	'before_title'  => '<h3>',
+  	'after_title'   => '</h3>'
+));	
+	
 
 	}
 add_action('widgets_init', 'blank_widgets_init');

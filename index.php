@@ -32,7 +32,7 @@
 			
 			<div class="excerpt-content">
 				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-				<p>Post Date</p>
+				<?php the_date( 'Y-m-d', '<p>', '</p>' ); ?>
 				<p><?php the_excerpt(); ?></p>
 			</div>
 		

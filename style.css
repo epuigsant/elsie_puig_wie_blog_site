@@ -148,12 +148,14 @@ footer .three-column {
 	width: 333.33%;
 }
 
-li.widget ul { 
+footer ul { 
 	list-style: none; 
 }
 
-li.widget li {
+footer li {
 	list-style: none;
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 .footer-one {
@@ -179,6 +181,26 @@ list-style-type: none !important;
 
 .brief-bio {
 	width: 350px;
+	margin-left: 15px;
+}
+
+.brief-bio p {
+	margin-top: -10px;
+}
+
+.brief-bio h3 {
+	margin-top: -8px;
+}
+
+.brief-bio li {
+list-style: none;
+}
+
+.profile-image {
+	background-image: url(img/profile.png);
+	width: 100px;
+	background-size: 100%;
+	background-repeat:no-repeat;
 }
 
 .header {
@@ -217,6 +239,7 @@ list-style-type: none !important;
 	font-size: 16px;
 	color: white;
 	font-style: italic;
+	margin-top: -10px;
 }
 
 .blog-site-title p {
