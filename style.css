@@ -61,6 +61,10 @@ p {
   font-size: 14px;
 }
 
+a {
+text-decoration:none;
+}
+
 /****BLOG GRID****/
 
 .blog-posts {
@@ -85,7 +89,7 @@ margin-bottom: 45px;
 	overflow: hidden;
 }
 
-.blog-post-image img {
+.blog-posts-image .wp-post-image {
     width: 100%;
 }
 
@@ -176,11 +180,7 @@ footer li {
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
-.footer-one {
-	color: white;
-}
-
-footer a {
+footer li a {
 text-decoration:none;
 color: white;
 }
@@ -317,7 +317,7 @@ list-style: none;
 	font-size: 16px;
 }
 
-.wp-post-image {
+.single-blog-post .wp-post-image {
 	float: left;
 	margin: 10px;
 }
