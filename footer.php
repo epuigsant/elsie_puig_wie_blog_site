@@ -2,9 +2,9 @@
 	
 	<div class="cta">
 		<p>Want to stay up to date on the latest? Subscribe!</p>
-		<form method="post">
+		<form method="post" action="mailto:epuigsant@gmail.com">
 			<input type="email" id="mail" name="user_mail" placeholder="Your Email" />
-			<button>Subscribe</button>
+			<input class="button" type="submit" value="Submit now"/>
 		</form>
 	</div>
 	

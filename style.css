@@ -9,6 +9,7 @@ Text Domain: elsie-puig-wie-blog-site
 */
 
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i');
 
 
 *{
@@ -80,16 +81,13 @@ margin-bottom: 45px;
 
 .blog-post-image {
 	width: 100%;
-	position: absolute;
+	height: 180px;
 	overflow: hidden;
 }
 
 .blog-post-image img {
-	object-fit: cover;
     width: 100%;
-    height: 48vh;
 }
-
 
 .excerpt-content {
 	width: 85%;
@@ -135,7 +133,7 @@ margin-bottom: 45px;
 	text-align: center;
 }
 
-.cta button {
+.cta .button {
 	background-color: #AB4747;
 	border: none:
 	color: white;
@@ -160,6 +158,7 @@ footer {
 	background-color: #3C3C45;
 	display:flex;
 	flex-direction: row;
+	padding: 30px 0 0 20px;
 }
 
 
@@ -181,8 +180,13 @@ footer li {
 	color: white;
 }
 
-a {
+footer a {
 text-decoration:none;
+color: white;
+}
+
+footer h3 {
+	color: white;
 }
 
 div.widget ul {
@@ -250,7 +254,8 @@ list-style: none;
 }
 
 .blog-site-title h1 {
-	font-size: 24px;
+	font-family: 'Droid Serif', serif;
+	font-size: 25px;
 	color: white;
 }
 
@@ -306,3 +311,27 @@ list-style: none;
 	width: 50%;
 }
 
+
+.single-blog-post p {
+	max-width: 600px;
+	font-size: 16px;
+}
+
+.wp-post-image {
+	float: left;
+	margin: 10px;
+}
+
+.page-template {
+	display: flex;
+	width 100%;
+	flex-direction:row;
+}
+
+.page {
+	width: 60%;
+}
+
+.sidebar {
+	width: 40%;
+}

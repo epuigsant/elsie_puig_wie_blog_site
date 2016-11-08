@@ -1,15 +1,5 @@
 <?php get_header(); ?>
 	
-	<!---CATEGORIES--->
-	
-	<div class="categories-list">
-		<div class="categories"><p>User Experience</p></div>
-		<div class="categories"><p>Web Design</p></div>
-		<div class="categories"><p>Content</p></div>
-		<div class="categories"><p>Publishing</p></div>
-	</div>
-	
-	
 	<!---BLOG POST EXCERPTS--->
 
 
@@ -51,10 +41,6 @@
 		
 		
 	</div> <!--- END BLOG EXCERPTS--->
-
-
-	<button class="more">More Posts</button>
-
 
 	
 	<?php get_footer(); ?>
